@@ -1,5 +1,5 @@
 function _go {
-	cd `find /mnt/d/Programming/ -name *$1* -print -quit` 
+	cd `find /mnt/d/Programming/ -name *$1* -okdir realpath {} \; -quit` 
 }
 alias go=_go
 PATH=~/.local/bin/:$PATH
