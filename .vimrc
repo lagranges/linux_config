@@ -76,5 +76,5 @@ let g:jedi#completions_command = "<C-Space>"
 let g:jedi#rename_command = "<leader>r"
 
 Plugin 'ervandew/supertab'
-let g:SuperTabDefaultCompletionType = '<C-@>'
-let g:SuperTabMappingForward = '<C-@>'
+ 
+" TO install: in vim, PluginInstall
