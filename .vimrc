@@ -65,6 +65,13 @@ set mouse=a
 set title
 set background=dark
 
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display all matching files when we tab complete
+set wildmenu
+
 Plugin 'davidhalter/jedi-vim'
 let g:jedi#goto_command = "<leader>d"
 let g:jedi#goto_assignments_command = "<leader>g"
