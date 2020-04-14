@@ -1,3 +1,4 @@
+PS1=$PS1'[\d - \A]\n$ '
 function _go {
 	cd `find /mnt/d/Programming/ -name *$1* -okdir realpath {} \; -quit` 
 }
