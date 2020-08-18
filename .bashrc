@@ -5,7 +5,7 @@ function _go {
 alias go=_go
 alias lrt="ls -lthr"
 PATH=~/.local/bin/:$PATH
-export LINUX_CONFIG=/home/lc888093/linux_config/
+export LINUX_CONFIG=/home/$USER/linux_config/
 function _synch_vim {
 	local pwd=`pwd`;
 	cd $LINUX_CONFIG && rsync -a --update ~/.vim/ .vim && cd $pwd 
@@ -15,7 +15,7 @@ alias synch_vim=_synch_vim
 alias gcfg="cd $LINUX_CONFIG"
 alias rs="source ~/.bashrc"
 alias gg="git pull --rebase && git push"
-export PATH="/home/lc888093/.pyenv/bin:$PATH"
+export PATH="/home/$USER/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 function _mark() {
@@ -30,4 +30,4 @@ _copy_clipboard () {
 	cat $1 | clip.exe
 }
 alias cpc="_copy_clipboard"
-
+alias psg="ps aux | grep "
