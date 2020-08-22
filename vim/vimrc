@@ -4,21 +4,14 @@ filetype off                  " required
 execute pathogen#infect()
 se rtp+=~/.vim/bundlet/Vundle.vim
 call vundle#begin()
-Plugin 'posva/vim-vue'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-commentary'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'leafgarland/typescript-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 filetype plugin on
 
-" so ~/linux_config/vim/src/jedi/.vimrc
-" so ~/linux_config/src/core/base/.vimrc
-" so ~/linux_config/vim/src/javascript/.vimrc
-" so ~/linux_config/src/core/filetypes/.vimrc
+so ~/linux_config/vim/src/core/base/.vimrc
 
 " TO install: in vim, PluginInstall
 let g:syntastic_python_checkers = ["flake8"]
