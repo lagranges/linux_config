@@ -1,0 +1,6 @@
+alias lrt="ls -lthr"
+alias gcfg="cd $LINUX_CONFIG"
+alias rs="source ~/.bashrc"
+alias gg="git pull --rebase && git push"
+alias psg="ps aux | grep "
+alias envg="env| grep"
