@@ -14,3 +14,8 @@ _copy_clipboard () {
 	fi
 }
 alias cpc="_copy_clipboard"
+_cd_and_ls () {
+	cd $@
+	lrt
+}
+alias cd="_cd_and_ls"
