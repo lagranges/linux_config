@@ -2,7 +2,6 @@ LOG_DIR=~/log/slackbot/
 APP_NAME=slackbot_university
 PATTERN=python.*slackbot_university
 
-export SLACK_API_TOKEN=xoxb-1301698801316-1301812752468-aUraGajicEqP0qg2Plb1OXHE
 export PYTHONPATH=$PYTHONPATH:~/dev/slackbot_university/
 
 start(){
